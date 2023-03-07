@@ -1,4 +1,5 @@
 @import "./fonts.scss";
+@import "./styles.scss";
 
 * {
   margin: 0;
@@ -19,4 +20,14 @@ body {
 button {
   border: none;
   cursor: pointer;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include laptop {
+    justify-content: space-evenly;
+  }
 }
