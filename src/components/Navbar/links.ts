@@ -2,7 +2,7 @@ export const links = [
   {
     drop: true,
     label: "КУРСЫ",
-    link: "course",
+    link: "courses",
     dropItem: [
       {
         title: "page",

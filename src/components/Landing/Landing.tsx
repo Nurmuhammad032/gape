@@ -103,7 +103,7 @@ const Landing = () => {
                     activeDot === i ? "active-slider" : ""
                   }`}
                   style={{
-                    transform: `translateX(${sliderPosition}px)`,
+                    transform: `translateX(${sliderPosition + 3}px)`,
                   }}
                   ref={ref}
                   key={i}
@@ -123,7 +123,9 @@ const Landing = () => {
             {rightSideSlider.map(({ date, hours, loc }, i) => (
               <ul
                 key={i}
-                className="landing__slider"
+                className={`landing__slider ${
+                  activeDot === i ? "active-slider" : ""
+                }`}
                 style={{
                   transform: `translateX(${sliderPosition}px)`,
                 }}

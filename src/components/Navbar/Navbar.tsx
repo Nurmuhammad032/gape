@@ -5,7 +5,7 @@ import { HiOutlineCalendar } from "react-icons/hi";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { links } from "./links";
 import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { RxChevronDown } from "react-icons/rx";
 import SideMenu from "./SideMenu/SideMenu";
 import { accordionStyles, accordionSummeryStyles } from "../accordionStyles";
@@ -17,7 +17,7 @@ const Navbar = () => {
   const [expanded, setExpanded] = useState<string | false>(false);
 
   const handleChange =
-    (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+    (panel: string) => (_: React.SyntheticEvent, isExpanded: boolean) => {
       setExpanded(isExpanded ? panel : false);
     };
 
@@ -40,6 +40,9 @@ const Navbar = () => {
     }
   }, [pathname]);
 
+  const getLinkClassName = (pathname: string, link: string): string =>
+    pathname.split("/")[1] === link ? "active-link" : "";
+
   return (
     <>
       <nav className={`navbar ${isScrolled ? "navbar-active" : ""}`}>
@@ -58,7 +61,12 @@ const Navbar = () => {
             {links.map((link, i) =>
               link.drop ? (
                 <li key={i} className="drop-li">
-                  <Link to={link.link}>{link.label}</Link>
+                  <Link
+                    className={getLinkClassName(pathname, link.link)}
+                    to={link.link}
+                  >
+                    {link.label}
+                  </Link>
                   <div className="navbar__drop-container">
                     {link.dropItem?.map(({ title, dropLink }, i) => (
                       <div key={i} className="navbar__drop-wrapper">
@@ -87,7 +95,14 @@ const Navbar = () => {
                             }}
                           >
                             {dropLink.map(({ label, link }, i) => (
-                              <Link to={link} key={i} className="drop-links">
+                              <Link
+                                to={link}
+                                key={i}
+                                className={`drop-links ${getLinkClassName(
+                                  pathname,
+                                  link
+                                )}`}
+                              >
                                 {label}
                               </Link>
                             ))}
@@ -99,12 +114,20 @@ const Navbar = () => {
                 </li>
               ) : (
                 <li key={i}>
-                  <Link to={link.link}>{link.label}</Link>
+                  <Link
+                    className={getLinkClassName(pathname, link.link)}
+                    to={link.link}
+                  >
+                    {link.label}
+                  </Link>
                 </li>
               )
             )}
             <li>
-              <Link to="/calendar">
+              <Link
+                className={getLinkClassName(pathname, "calendar")}
+                to="/calendar"
+              >
                 <span>
                   <HiOutlineCalendar />
                 </span>

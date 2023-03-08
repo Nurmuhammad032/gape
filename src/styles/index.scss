@@ -31,3 +31,11 @@ button {
     justify-content: space-evenly;
   }
 }
+
+.active-link {
+  color: $blue !important;
+
+  span {
+    color: $blue !important;
+  }
+}
