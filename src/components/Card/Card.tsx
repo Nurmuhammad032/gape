@@ -26,7 +26,9 @@ const Card = ({ img, title, link, day, month, desc }: Props) => {
         </div>
         <div className="card__desc">
           <p>{desc}</p>
-          <img src="/svg/arrow-right.svg" alt="" />
+          <div className="card-arrow">
+            <img src="/svg/arrow-right.svg" alt="" />
+          </div>
         </div>
       </div>
     </Link>

@@ -1,6 +1,6 @@
 export const data = [
   {
-    link: "",
+    link: "course",
     tab: "популярное",
     img: "/images/card-img2.png",
     title: "Porem ipsum dolor",
@@ -9,7 +9,7 @@ export const data = [
     desc: "Morem ipsum dolor sit amet, consectetur",
   },
   {
-    link: "",
+    link: "course",
     tab: "популярное",
     img: "/images/card-img3.png",
     title: "Porem ipsum dolor",
@@ -18,7 +18,7 @@ export const data = [
     desc: "Morem ipsum dolor sit amet, consectetur",
   },
   {
-    link: "",
+    link: "course",
     tab: "популярное",
     img: "/images/card-img4.png",
     title: "Porem ipsum dolor",
@@ -27,7 +27,7 @@ export const data = [
     desc: "Morem ipsum dolor sit amet, consectetur",
   },
   {
-    link: "",
+    link: "course",
     tab: "популярное",
     img: "/images/card-img2.png",
     title: "Porem ipsum dolor",
@@ -36,7 +36,7 @@ export const data = [
     desc: "Morem ipsum dolor sit amet, consectetur",
   },
   {
-    link: "",
+    link: "course",
     tab: "популярное",
     img: "/images/card-img3.png",
     title: "Porem ipsum dolor",
@@ -45,7 +45,7 @@ export const data = [
     desc: "Morem ipsum dolor sit amet, consectetur",
   },
   {
-    link: "",
+    link: "course",
     tab: "популярное",
     img: "/images/card-img1.png",
     title: "Porem ipsum dolor",
@@ -54,7 +54,7 @@ export const data = [
     desc: "Morem ipsum dolor sit amet, consectetur",
   },
   {
-    link: "",
+    link: "course",
     tab: "популярное",
     img: "/images/card-img1.png",
     title: "Porem ipsum dolor",
@@ -63,7 +63,7 @@ export const data = [
     desc: "Morem ipsum dolor sit amet, consectetur",
   },
   {
-    link: "",
+    link: "course",
     tab: "уроки",
     img: "/images/card-img1.png",
     title: "Porem ipsum dolor",
@@ -72,7 +72,7 @@ export const data = [
     desc: "Morem ipsum dolor sit amet, consectetur",
   },
   {
-    link: "",
+    link: "course",
     tab: "уроки",
     img: "/images/card-img2.png",
     title: "Porem ipsum dolor",
@@ -81,7 +81,7 @@ export const data = [
     desc: "Morem ipsum dolor sit amet, consectetur",
   },
   {
-    link: "",
+    link: "course",
     tab: "уроки",
     img: "/images/card-img1.png",
     title: "Porem ipsum dolor",
@@ -90,7 +90,7 @@ export const data = [
     desc: "Morem ipsum dolor sit amet, consectetur",
   },
   {
-    link: "",
+    link: "course",
     tab: "КУРСЫ",
     img: "/images/card-img4.png",
     title: "Porem ipsum dolor",
@@ -99,7 +99,7 @@ export const data = [
     desc: "Morem ipsum dolor sit amet, consectetur",
   },
   {
-    link: "",
+    link: "course",
     tab: "КУРСЫ",
     img: "/images/card-img1.png",
     title: "Porem ipsum dolor",
@@ -108,7 +108,7 @@ export const data = [
     desc: "Morem ipsum dolor sit amet, consectetur",
   },
   {
-    link: "",
+    link: "course",
     tab: "КУРСЫ",
     img: "/images/card-img1.png",
     title: "Porem ipsum dolor",

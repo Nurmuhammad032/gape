@@ -19,10 +19,6 @@
       width: 100%;
       transition: all 0.2s ease;
     }
-
-    &:hover img {
-      transform: scale(1.1);
-    }
   }
 
   &__title {
@@ -92,6 +88,24 @@
 
       @include phones {
         width: 4rem;
+      }
+    }
+  }
+
+  &:hover .card__img-wrapper img {
+    transform: scale(1.1);
+  }
+
+  &:hover .card-arrow img {
+    animation: arrow 0.8s infinite;
+
+    @keyframes arrow {
+      0%,
+      100% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(-0.8rem);
       }
     }
   }

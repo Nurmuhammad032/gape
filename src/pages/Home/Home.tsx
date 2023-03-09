@@ -1,10 +1,10 @@
 import "./Home.scss";
-import { Card, Landing, Section5 } from "../../components";
+import { Card, Landing, Section3, Section5, Teachers } from "../../components";
 import { Link } from "react-router-dom";
 
 const data = [
   {
-    link: "",
+    link: "course",
     img: "/images/card-img1.png",
     title: "Porem ipsum dolor",
     day: "06",
@@ -12,7 +12,7 @@ const data = [
     desc: "Morem ipsum dolor sit amet, consectetur",
   },
   {
-    link: "",
+    link: "course",
     img: "/images/card-img1.png",
     title: "Porem ipsum dolor",
     day: "06",
@@ -20,7 +20,7 @@ const data = [
     desc: "Morem ipsum dolor sit amet, consectetur",
   },
   {
-    link: "",
+    link: "course",
     img: "/images/card-img1.png",
     title: "Porem ipsum dolor",
     day: "06",
@@ -51,9 +51,11 @@ const Home = () => {
           ))}
         </div>
         <div className="course__btn">
-          <Link to="">Смотреть все</Link>
+          <Link to="/courses">Смотреть все</Link>
         </div>
       </section>
+      <Section3 />
+      <Teachers />
       <Section5 />
     </>
   );

@@ -25,6 +25,7 @@
       color: $white;
       padding: 1.5rem 2rem;
       border: 2px solid $blue;
+      transition: all 0.2s ease;
 
       &:hover {
         background-color: transparent;

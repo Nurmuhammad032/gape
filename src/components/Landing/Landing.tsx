@@ -5,6 +5,7 @@ import { HiOutlineCalendar } from "react-icons/hi";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { TiLocationOutline } from "react-icons/ti";
 import { useMediaQuery } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const leftSideSlider = [
   {
@@ -116,7 +117,7 @@ const Landing = () => {
               );
             })}
           </div>
-          <button onClick={() => setSliderPosition(width)}>Купить</button>
+          <Link to="/courses">Купить</Link>
         </div>
         <div className="landing__left">
           <div className="landing__slider-wrapper">

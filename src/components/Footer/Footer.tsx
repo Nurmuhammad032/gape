@@ -13,20 +13,19 @@ function Footer() {
         <div className="footer__wrapper">
           <div className="column-wrap">
             <h6>Jorem</h6>
-            <Link to="">lnk</Link>
-            <Link to="">lnk</Link>
-            <Link to="">lnk</Link>
-            <Link to="">lnk</Link>
-            <Link to="">lnk</Link>
-            <Link to="">lnk</Link>
+            <Link to="">Porem</Link>
+            <Link to="">ipsum</Link>
+            <Link to="">dolor sit</Link>
+            <Link to="">amet</Link>
+            <Link to="">consectetur</Link>
           </div>
           <div className="column-wrap">
             <h6>Jorem</h6>
-            <Link to="">lnk</Link>
-            <Link to="">lnk</Link>
-            <Link to="">lnk</Link>
-            <Link to="">lnk</Link>
-            <Link to="">lnk</Link>
+            <Link to="">Porem</Link>
+            <Link to="">ipsum</Link>
+            <Link to="">dolor sit</Link>
+            <Link to="">amet</Link>
+            <Link to="">consectetur</Link>
           </div>
           <div className="column-wrap">
             <h6>Jorem</h6>
