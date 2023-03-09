@@ -13,9 +13,15 @@
 
   &__img-wrapper {
     width: 100%;
+    overflow: hidden;
 
     img {
       width: 100%;
+      transition: all 0.2s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
     }
   }
 

@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Footer, Navbar, ScrollTop } from "./components";
-import { Courses, Home } from "./pages";
+import { Course, Courses, Home } from "./pages";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<Courses />} />
+        <Route path="/course" element={<Course />} />
       </Routes>
       <Footer />
     </Router>
