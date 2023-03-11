@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Footer, Navbar, ScrollTop } from "./components";
-import { Course, Courses, Home } from "./pages";
+import { Calendar, Course, Courses, Home } from "./pages";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/course" element={<Course />} />
+        <Route path="/calendar" element={<Calendar />} />
       </Routes>
       <Footer />
     </Router>

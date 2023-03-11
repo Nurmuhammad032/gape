@@ -13,6 +13,11 @@
     margin: 14rem auto 0 auto;
     max-width: 135rem;
 
+    @include laptop-xl {
+      padding: 3rem 0;
+      margin: 5rem 0 0 0;
+    }
+
     @include phones {
       padding: 3rem 0;
       margin: 0;
@@ -82,7 +87,7 @@
   &__input-wrapper {
     display: flex;
 
-    @include phones {
+    @include laptop-xl {
       flex-direction: column;
     }
 
@@ -94,7 +99,7 @@
       width: 24.6rem;
       height: 6.1rem;
 
-      @include phones {
+      @include laptop-xl {
         width: 100%;
       }
     }
@@ -107,7 +112,7 @@
       border: none;
       color: $white;
 
-      @include phones {
+      @include laptop-xl {
         width: 100%;
         margin-top: 2rem;
         height: 6rem;

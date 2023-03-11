@@ -85,6 +85,22 @@ const Landing = () => {
     handleDotClick(0);
   }, [matches]);
 
+  useEffect(() => {
+    // Function to update the slider position
+    const updateSlider = () => {
+      // Increment the active slider index
+      const nextIndex = activeDot === numberOfSlides - 1 ? 0 : activeDot + 1;
+      setActiveDot(nextIndex);
+      setSliderPosition(-sliderPositions[nextIndex]);
+    };
+
+    // Set the interval to update the slider every 30 seconds
+    const intervalId = setInterval(updateSlider, 10000);
+
+    // Clean up the interval when the component unmounts or when the active slider changes
+    return () => clearInterval(intervalId);
+  }, [activeDot, numberOfSlides, sliderPositions]);
+
   return (
     <section
       className="landing"

@@ -8,7 +8,9 @@ function Footer() {
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__logo-wrapper">
-          <img src="/images/logo.png" alt="" />
+          <Link to="/">
+            <img src="/images/logo.png" alt="" />
+          </Link>
         </div>
         <div className="footer__wrapper">
           <div className="column-wrap">
